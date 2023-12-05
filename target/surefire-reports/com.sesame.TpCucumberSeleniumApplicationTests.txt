@@ -1,0 +1,21 @@
+-------------------------------------------------------------------------------
+Test set: com.sesame.TpCucumberSeleniumApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.764 s <<< FAILURE! - in com.sesame.TpCucumberSeleniumApplicationTests
+Google search.basic search  Time elapsed: 0.181 s  <<< ERROR!
+java.lang.IllegalStateException: The driver executable does not exist: /usr/bin/geckodriver
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:44)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:167)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:190)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+	at com.sesame.StepDefinition.i_open_google_search_page(StepDefinition.java:35)
+	at ✽.I open google search page(file:///home/tpcucumber/Documents/Projects/Test/src/test/java/resources/searchgoogle.feature:5)
+
+Google search.basic search  Time elapsed: 0.181 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "this.driver" is null
+	at com.sesame.StepDefinition.quitWebDriver(StepDefinition.java:25)
+
